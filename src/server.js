@@ -19,6 +19,7 @@ const server = http.createServer(async (req, res) => {
 
     req.params = params
     req.query = query ? extractQueryParams(query) : {};
+    res.setHeader('Content-type', 'application/json')
 
     return route.handler(req, res)
   }

@@ -24,18 +24,20 @@ export class Database {
 
     if (search) {
       data = data.filter(row => {
-        return Object.entries(search).some(([key, value]) => {
+        return Object.entries(search).some(([key, value]) => { 
           if (!value) return true;
 
+          const decodedValue = decodeURIComponent(value);
+          
           if (search?.id) {
-            return row[key] === value;
+            return row[key] === decodedValue;
           }
           
-          return row[key].includes(value);
+          return row[key].includes(decodedValue);
         });
       });
     }
-
+    
     return data;
   }
 
