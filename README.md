@@ -50,8 +50,11 @@ This project is a Node.js HTTP server developed as part of the RocketSeat Ignite
 - Example requests:  
 
   - **Create a task**:  
-    ```json  
+    ```bash  
     POST /tasks  
+    ```  
+
+    ```json  
     {  
       "title": "Sample Task",  
       "description": "This is a test task."  
@@ -69,8 +72,11 @@ This project is a Node.js HTTP server developed as part of the RocketSeat Ignite
     ```  
 
   - **Update a task**:  
-    ```json  
+  ```bash  
     PUT /tasks/12345
+    ```  
+    
+    ```json  
     {  
       "title": "Updated Task",  
       "description": "Updated description."  
