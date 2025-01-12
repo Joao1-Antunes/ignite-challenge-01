@@ -12,14 +12,14 @@ This project is a Node.js HTTP server developed as part of the RocketSeat Ignite
 
 ## Routes
 
-| Method  | Description                           |
-|---------|---------------------------------------|
-| `POST`  | Create a new task.                    |
-| `GET`   | Get all tasks.                        |
-| `GET`   | Get tasks matching the search.        |
-| `PUT`   | Update a task.                        |
-| `DELETE`| Delete a task by `id`.                |
-| `PATCH` | Mark a task as completed.             |
+| Method  | Description                                  |
+|---------|----------------------------------------------| 
+| `POST`  | Create a new task.                           |
+| `GET`   | Get all tasks or a task matching the search. |
+| `GET`   | Get tasks matching the search.               |
+| `PUT`   | Update a task.                               |
+| `DELETE`| Delete a task by `id`.                       |
+| `PATCH` | Mark a task as completed.                    |
 
 ## Technologies
 
