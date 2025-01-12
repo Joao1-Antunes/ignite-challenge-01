@@ -1,98 +1,98 @@
-# [RocketSeat] - Ignite Challenge 01: HTTP Server  
+# [RocketSeat] - Ignite Challenge 01: HTTP Server
 
-This project is a Node.js HTTP server developed as part of the RocketSeat Ignite Challenge. The server provides endpoints to manage tasks, allowing you to create, retrieve, update, delete, and mark tasks as completed.  
+This project is a Node.js HTTP server developed as part of the RocketSeat Ignite Challenge. The server provides endpoints to manage tasks, allowing you to create, retrieve, update, delete, and mark tasks as completed.
 
-## Features  
+## Features
 
-- **Create a Task**: Add a new task with a title and description.  
-- **Retrieve Tasks**: Fetch all tasks or search by `id`, `title`, or `description`.  
-- **Update a Task**: Modify an existing task's details.  
-- **Delete a Task**: Remove a task by its `id`.  
-- **Mark Task as Completed**: Update a task's status to completed.  
+- **Create a Task**: Add a new task with a title and description.
+- **Retrieve Tasks**: Fetch all tasks or search by `id`, `title`, or `description`.
+- **Update a Task**: Modify an existing task's details.
+- **Delete a Task**: Remove a task by its `id`.
+- **Mark Task as Completed**: Update a task's status to completed.
 
-## Routes  
+## Routes
 
-| Method  | Endpoint              | Description                           |  
-|---------|-----------------------|---------------------------------------|  
-| `POST`  | `/tasks`              | Create a new task.                   |  
-| `GET`   | `/tasks`              | Retrieve all tasks.                  |  
-| `GET`   | `/tasks?search=value` | Retrieve tasks matching the search.  |  
-| `PUT`   | `/put`                | Update a specific task.              |  
-| `DELETE`| `/delete`             | Delete a task by `id`.               |  
-| `PATCH` | `/patch`              | Mark a task as completed.            |  
+| Method  | Description                           |
+|---------|---------------------------------------|
+| `POST`  | Create a new task.                    |
+| `GET`   | Get all tasks.                        |
+| `GET`   | Get tasks matching the search.        |
+| `PUT`   | Update a task.                        |
+| `DELETE`| Delete a task by `id`.                |
+| `PATCH` | Mark a task as completed.             |
 
-## Technologies  
+## Technologies
 
-- **Node.js**: Server runtime.  
-- **HTTP Module**: For handling HTTP requests and responses.  
+- **Node.js**: Server runtime.
+- **HTTP Module**: For handling HTTP requests and responses.
 
-## Installation  
+## Installation
 
-1. **Clone the repository**  
-   ```bash  
-   git clone <repository_url>  
-   cd <repository_directory>  
-   ```  
+1. **Clone the repository**
+   ```bash
+   git clone <repository_url>
+   cd <repository_directory>
+   ```
 
-2. **Install dependencies**  
-   ```bash  
-   npm install  
-   ```  
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-3. **Start the server**  
-   ```bash  
-   npm run dev  
-   ```  
+3. **Start the server**
+   ```bash
+   npm run dev
+   ```
 
-## Usage  
+## Usage
 
-- Use tools like [Postman](https://www.postman.com/) or [cURL](https://curl.se/) to test the endpoints.  
-- Example requests:  
+- Use tools like [Postman](https://www.postman.com/) or [cURL](https://curl.se/) to test the endpoints.
+- Example requests:
 
-  - **Create a task**:  
-    ```bash  
-    POST /tasks  
-    ```  
+  - **Create a task**:
+    ```bash
+    POST /tasks
+    ```
 
-    ```json  
-    {  
-      "title": "Sample Task",  
-      "description": "This is a test task."  
-    }  
-    ```  
+    ```json
+    {
+      "title": "Sample Task",
+      "description": "This is a test task."
+    }
+    ```
 
-  - **Get all tasks**:  
-    ```bash  
-    GET /tasks  
-    ```  
+  - **Get all tasks**:
+    ```bash
+    GET /tasks
+    ```
 
-  - **Get tasks with search**:  
-    ```bash  
-    GET /tasks?searchParams=Sample  
-    ```  
+  - **Get tasks with search**:
+    ```bash
+    GET /tasks?searchParams=Sample
+    ```
 
-  - **Update a task**:  
-  ```bash  
+  - **Update a task**:
+  ```bash
     PUT /tasks/12345
     ```  
     
-    ```json  
-    {  
-      "title": "Updated Task",  
-      "description": "Updated description."  
-    }  
-    ```  
+    ```json
+    {
+      "title": "Updated Task",
+      "description": "Updated description."
+    }
+    ```
 
-  - **Delete a task**:  
-    ```bash  
+  - **Delete a task**:
+    ```bash
     DELETE /tasks/12345
-    ```  
+    ```
 
-  - **Mark a task as completed**:  
-    ```bash  
-    PATCH /tasks/12345  
-    ```  
+  - **Mark a task as completed**:
+    ```bash
+    PATCH /tasks/12345
+    ```
 
-## License  
+## License
 
-This project is for educational purposes and follows the RocketSeat guidelines.  
+This project is for educational purposes and follows the RocketSeat guidelines.
