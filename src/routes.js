@@ -30,7 +30,7 @@ export const routes = [
 
       database.insert("tasks", task);
 
-      return res.writeHead(201).end("Task Criada!");
+      return res.writeHead(201).end(JSON.stringify({ message: "Task created!" }))
     }
   },
   {
@@ -99,15 +99,15 @@ export const routes = [
     method: 'PATCH',
     path: buildRoutePath('/tasks/:id/complete'),
     handler: (req, res) => {
-      const { id } = req.params
+      const { id } = req.params;
 
-      const [task] = database.select('tasks', { id })
+      const [task] = database.select('tasks', { id });
 
       if (!task) {
         return res.writeHead(404).end(JSON.stringify({ message: "Task not found" }));
       }
 
-      const isTaskCompleted = !!task.completed_at;
+      const isTaskCompleted = !!task?.completed_at;
       const completed_at = isTaskCompleted ? null : new Date();
 
       database.update('tasks', id, { completed_at });
