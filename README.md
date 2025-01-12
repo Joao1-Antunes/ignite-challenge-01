@@ -5,8 +5,8 @@ This project is a Node.js HTTP server developed as part of the RocketSeat Ignite
 ## Features
 
 - **Create a Task**: Add a new task with a title and description.
-- **Retrieve Tasks**: Fetch all tasks or search by `id`, `title`, or `description`.
-- **Update a Task**: Modify an existing task's details.
+- **Get Tasks**: Fetch all tasks or search by `id`, `title`, or `description`.
+- **Update a Task**: Update an existing task's fields.
 - **Delete a Task**: Remove a task by its `id`.
 - **Mark Task as Completed**: Update a task's status to completed.
 
@@ -16,7 +16,6 @@ This project is a Node.js HTTP server developed as part of the RocketSeat Ignite
 |---------|----------------------------------------------| 
 | `POST`  | Create a new task.                           |
 | `GET`   | Get all tasks or a task matching the search. |
-| `GET`   | Get tasks matching the search.               |
 | `PUT`   | Update a task.                               |
 | `DELETE`| Delete a task by `id`.                       |
 | `PATCH` | Mark a task as completed.                    |
